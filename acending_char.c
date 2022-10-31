@@ -57,7 +57,7 @@ void sort(sll *ptr)
 	for(i=0;i<5;i++)
 	{
 		b=a->next;
-		for(j=0;j<5-1-i;j++)
+		for(j=i+1;j<5;j++)
 		{
 			if((a->a)>(b->a))
 			{
