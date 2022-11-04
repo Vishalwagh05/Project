@@ -1,5 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
 #include"main.h"
 
 typedef struct n
@@ -16,8 +14,6 @@ void acending()
 {
 	printf("\nNumber is odd :\n");
 	sll *head=0;
-	int i;
-	// for(i=0;i<5;i++)
 
 	create(&head);
 
@@ -51,23 +47,23 @@ void create(sll **ptr)
 
 void sort(sll *ptr)
 {
-	sll t , *a,*b ;
+	sll t ,*b ;
 	int i,j;
-	a=ptr;
+	
 	for(i=0;i<5;i++)
 	{
-		b=a->next;
+		b=ptr->next;
 		for(j=i+1;j<5;j++)
 		{
-			if((a->a)>(b->a))
+			if((ptr->a)>(b->a))
 			{
-				(t.a)=(a->a);
-				(a->a)=(b->a);
+				(t.a)=(ptr->a);
+				(ptr->a)=(b->a);
 				(b->a)=(t.a);
 			}
 			b=b->next;
 		}
-		a=a->next;
+		ptr=ptr->next;
 	}                                    
 
 

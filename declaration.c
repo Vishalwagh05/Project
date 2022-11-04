@@ -1,10 +1,6 @@
-#include<stdio.h>
-#include<stdlib.h>
 #include"main.h"
 
-Sp* declaration(void)
+void declaration(Sp **var)
 {
-	int i,j,k;
-	Sp *var = malloc(sizeof(struct project));
-	return var;
+	*var = malloc(sizeof(struct project));
 }

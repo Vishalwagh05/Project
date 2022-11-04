@@ -1,6 +1,3 @@
-#include<stdio.h>
-#include<stdio_ext.h>
-#include<string.h>
 #include"main.h"
 
 void string_compare(void)

@@ -1,12 +1,10 @@
-#include<stdio.h>
-#include<stdlib.h>
 #include"main.h"
 
 
 void rand_function(Sp **ptr)
 {
 	int i, j ,k;
-	srand(time(NULL));
+	srand(getpid());
 	for(i=0;i<4;i++)
 	{
 		for(j=0;j<3;j++)
